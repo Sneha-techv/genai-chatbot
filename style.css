@@ -1,0 +1,109 @@
+/* styles.css */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.chat-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    background-color: #1E90FF;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+}
+
+.chat-box {
+    overflow-y: auto;
+    flex-grow: 1;
+    padding: 15px;
+    padding-bottom: 10px;
+}
+
+.message {
+    max-width: 80%;
+    padding: 8px 12px;
+    margin: 10px 0;
+    border-radius: 10px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.bot-message {
+    background-color: #d0e7ff;
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: #d8f8d6;
+    align-self: flex-end;
+}
+
+.input-area {
+    display: flex;
+    padding: 10px;
+    border-top: 1px solid #ddd;
+    background-color: #fff;
+}
+
+textarea {
+    width: 100%;
+    border-radius: 5px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 14px;
+    resize: none;
+}
+
+button {
+    background-color: #1E90FF;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #007bff;
+}
+
+.sos-alert {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.sos-alert button {
+    background-color: #ff4d4d;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.sos-alert button:hover {
+    background-color: #e60000;
+}
